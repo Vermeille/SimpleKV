@@ -1,9 +1,11 @@
 import redis
 import os
 from flask_redis import FlaskRedis
+from flask_cors import CORS
 from flask import Flask, request
 
 app = Flask(__name__)
+CORS(app)
 app.config['REDIS_URL'] = os.environ['REDIS_URL']
 r = FlaskRedis(app)
 
