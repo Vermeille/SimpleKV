@@ -6,7 +6,8 @@ without being read or written to. No auth, nothing.
 
 ```
 # store data
-curl -X POST <url>/some_key/name -d data=hello
+$ curl -X POST <url>/some_key/name -d data=hello
 # retrieve data
-curl <url>/some_key/name
+$ curl <url>/some_key/name
+hello
 ```
